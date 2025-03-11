@@ -32,3 +32,7 @@ def get_dad_joke():
 
 if __name__ == "__main__":
     get_dad_joke()
+
+## Dependencies: 
+
+External libraries (like requests), ensure they are listed in a requirements.txt file.
