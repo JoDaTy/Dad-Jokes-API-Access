@@ -1,6 +1,6 @@
 # Dad-Jokes-API-Access
 
-A Jenkins job to run a Python script that accesses the Dad Jokes API. Below is a step-by-step guide to help you set this up:
+A Jenkins job to run a Python script that accesses the Dad Jokes API.
 
 ### Prerequisites
 1. **Jenkins Installed:** Ensure you have Jenkins installed and running on your machine or server.
