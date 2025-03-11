@@ -50,9 +50,18 @@ A Jenkins job to run a Python script that accesses the Dad Jokes API.
      - Use a shell script to set up the environment and run your Python script. Example:
        ```bash
        #!/bin/bash
-       # Activate virtual environment if used
-       # source /path/to/venv/bin/activate
+       # Navigate to the workspace directory
+       cd $WORKSPACE
+       # Create a virtual environment in the workspace
+       python3 -m venv venv
+       # Activate virtual environment
+       source venv/bin/activate
+       # Install dependencies
+       pip install -r requirements.txt
+       # Run the Python script
        python /path/to/your_script.py
+       # Deactivate the virtual environment
+       deactivate
        ```
    - **Post-build Actions:**
      - You can add notifications or other post-build actions if desired.
